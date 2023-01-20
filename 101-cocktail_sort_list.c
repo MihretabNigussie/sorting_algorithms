@@ -62,9 +62,7 @@ void cocktail_sort_list(listint_t **list)
 	int sorted = 0;
 
 	if (!list || !*list || list_len(*list) < 2)
-	{
 		return;
-	}
 	p = *list;
 	while (!sorted)
 	{
@@ -78,14 +76,10 @@ void cocktail_sort_list(listint_t **list)
 				print_list(*list);
 			}
 			else
-			{
 				p = p->next;
-			}
 		}
 		if (sorted)
-		{
 			break;
-		}
 		p = p->prev;
 		while (p->prev)
 		{
@@ -97,9 +91,7 @@ void cocktail_sort_list(listint_t **list)
 				print_list(*list);
 			}
 			else
-			{
 				p = p->prev;
-			}
 		}
 	}
 }
